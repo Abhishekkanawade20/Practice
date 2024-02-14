@@ -1,0 +1,7 @@
+---
+name: my first yaml file
+hosts: all
+tasks:
+  - name: my first tasks
+    debug: 
+      msg: "Hello everyone"
