@@ -4,7 +4,7 @@
       - name: 
         debug: 
           msg: "{{URL}}" 
-          msg1: "{{URLt}}"
+          msgt: "{{URLt}}"
   vars: 
    URL: "www.google.com" 
    URLt: "one"
