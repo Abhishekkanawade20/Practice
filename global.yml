@@ -2,7 +2,7 @@
   hosts: all
   vars: 
     a: "heelo this is global"
-    tasks:
-    - name: 
+  tasks:
+   - name: 
       debug:
        msg: "{{a}}"
