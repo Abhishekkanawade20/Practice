@@ -3,8 +3,8 @@
   tasks: 
       - name: 
         debug: 
-          msg: "{{URL}}" 
-          msgt: "{{URLt}}"
+          msg: "{{URL,urlt}}" 
+           
   vars: 
    URL: "www.google.com" 
    URLt: "one"
