@@ -1,7 +1,7 @@
 - name: local playbook
   hosts: all
   tasks: abcv
-      - name: 
+      - name: vuhj
         debug: 
           msg: "{{URL}}" 
   vars: 
