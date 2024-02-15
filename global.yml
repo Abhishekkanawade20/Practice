@@ -1,0 +1,8 @@
+- name: global variable
+  hosts: all
+  vars: 
+    a: "heelo this is global"
+    tasks:
+    - name: 
+      debug:
+       msg: "{{a}}"
