@@ -2,7 +2,7 @@
   hosts: all
   tasks: 
      - name: 
-        debug: 
+       debug: 
          msg: "{{URL}}" 
   vars: 
     URL: "www.google.com"
