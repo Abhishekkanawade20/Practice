@@ -1,0 +1,10 @@
+---
+- name: Getting multiple factors
+  hosts: all
+  tasks:
+    - name: getting block size of node server
+      debug:
+        msg: "{{block_size}}"
+    - name: gettig node user's home dir
+      debug:
+        msg: "{{ansible_user_dir}}"
