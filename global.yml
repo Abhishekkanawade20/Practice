@@ -4,5 +4,5 @@
     a: "heelo this is global"
   tasks:
    - name: 
-      debug:
+     debug:
        msg: "{{a}}"
