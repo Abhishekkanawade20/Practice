@@ -2,8 +2,6 @@
 - name: this is my local playbook
   hosts: all
   tasks:
-    vars:
-      XYZ: "Global"
-- name: task 1
-  debug:
-    msg: "{{XYZ}}"
+   - name: task 1
+     debug:
+      msg: "{{XYZ}}"
