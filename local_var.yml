@@ -1,14 +1,14 @@
 - name: local playbook
   hosts: all
-   tasks: 
+  tasks: 
       - name: 
         debug: 
           msg: "{{URL}}" 
   vars: 
    URL: "www.google.com" 
   tasks: 
-      - name: 
-        debug: 
-          msg: "{{URL}}}"
+    - name: 
+      debug: 
+       msg: "{{URL}}}"
         
            
