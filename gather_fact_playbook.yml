@@ -1,0 +1,8 @@
+---
+- name: This playbook for getting details of ansible_guid_of node user
+  hosts: all
+  become: true
+  tasks:
+   - name: getting guid  of user
+     debug:
+      msg: "{{ansible_user_gid}}"
