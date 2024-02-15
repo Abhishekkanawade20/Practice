@@ -1,13 +1,13 @@
 - name: local playbook
   hosts: all
-  tasks: abcv
-      - name: vuhj
+  tasks: 
+      - name: 
         debug: 
           msg: "{{URL}}" 
   vars: 
    URL: "www.google.com" 
    URLt: "one"
-  tasks: 
+  taskst: 
       - name: 
         debug: 
           msg: "{{URLt}}"
