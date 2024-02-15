@@ -1,6 +1,7 @@
 ---
 - name: Getting multiple factors
   hosts: all
+  become: true
   tasks:
     - name: getting block size of node server
       debug:
