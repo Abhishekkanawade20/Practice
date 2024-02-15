@@ -3,7 +3,17 @@
   hosts: all
   become: true
   tasks:
-    - name: getting block size of node server
+    - name: Getting ansible arcitecture
       debug:
         msg: "{{ansible_architecture}}"
+    - name: Getting asible bios date
+      debug: 
+        msg: "{{ansible_bios_date}}"
+    - name: getting ansible creation date and time
+      debug:
+        msg: "{{ansible_date_time}}"
+    - name: Getting ansible bios vendor
+      debug:
+        msg: "{{ansible_domain}}"
+        
 ...
