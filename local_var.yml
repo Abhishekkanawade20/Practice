@@ -6,9 +6,10 @@
           msg: "{{URL}}" 
   vars: 
    URL: "www.google.com" 
+   URLt: "one"
   tasks: 
-    - name: 
-      debug: 
-       msg: "{{URL}}}"
+      - name: 
+        debug: 
+          msg: "{{URLt}}"
         
            
