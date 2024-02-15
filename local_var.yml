@@ -5,3 +5,5 @@
    - name: task 1
      debug:
       msg: "{{XYZ}}"
+  vars:
+    XYZ: "how are you"
