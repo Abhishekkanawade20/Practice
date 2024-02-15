@@ -5,5 +5,5 @@
   tasks:
     - name: getting block size of node server
       debug:
-        msg: "{{block_size}}"
+        msg: "{{ansible_architecture}}"
 ...
