@@ -3,12 +3,12 @@
   hosts: all
   become: true
   tasks: 
-    - shell: mkdir /abhishek && touch /abhishek/file1.txt
+    - shell: mkdir /vishal && touch /vishal/file2.txt
     - name: Making dir and file 
       debug:
         msg: Please check that dir and file is created or not at node server at given path.
-    - shell: rm -rvf /abhishek/file1.txt
-    - name: Removing /abhishek/file1.txt file
+    - shell: rm -rvf /vishal/file2.txt
+    - name: Removing /vishal/file2.txt file
       debug: 
         msg: Please check that fil is removed or not.
 ...
