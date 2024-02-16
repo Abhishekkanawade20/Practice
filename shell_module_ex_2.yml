@@ -7,4 +7,12 @@
     - name: Making dir and file 
       debug:
         msg: Please check that dir and file is created or not at node server at given path.
+    - shell: rm -rvf /abhishek/file1.txt
+    - name: Removing /abhishek/file1.txt file
+      debug: 
+        msg: Please check that fil is removed or not.
 ...
+
+# so basically shell module executing commands at node server.
+#like using above shell command we have created dir and file at node server.
+# o/p: and yes folder and file is created at node server.
