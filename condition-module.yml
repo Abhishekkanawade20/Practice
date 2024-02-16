@@ -1,0 +1,9 @@
+---
+- name: Condition module example
+  hosts: all
+  become: true
+  tasks:
+    - name: print ubuntu
+      debug: 
+        msg: when the condition satisfies then only it print msg otherwise skips.
+      when: ansible_os_family == "Debian"
