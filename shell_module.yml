@@ -1,0 +1,11 @@
+---
+- name: This shell module example
+  hosts: all
+  become: true
+  tasks:
+    - shell: echo "Hello Team" >> /mnt/abhishek.txt
+    - name: creating text file with some content
+      debug: 
+        msg: printed
+
+... 
