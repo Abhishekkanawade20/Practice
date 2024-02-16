@@ -6,6 +6,6 @@
     - shell: echo "Hello Team" >> /mnt/abhishek.txt
     - name: creating text file with some content
       debug: 
-        msg: printed
+        msg: check that file is created or not at node server at path /mnt/abhishek.txt
 
 ... 
