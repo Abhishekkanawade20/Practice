@@ -1,0 +1,10 @@
+---
+- name: condition module
+  hosts: all
+  tasks: 
+    - name: 
+        debug:
+          msg: ansible architecture is 
+        when: ansible_architecture == "x86_65"
+...
+
