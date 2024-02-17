@@ -4,8 +4,8 @@
   become: true
   tasks: 
     - name: 
-        debug:
-          msg: ansible architecture is 
-        when: ansible_architecture == "x86_65"
+      debug:
+        msg: ansible architecture is 
+      when: ansible_architecture == "x86_65"
 ...
 
