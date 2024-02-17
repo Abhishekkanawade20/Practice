@@ -6,10 +6,10 @@
     - name: 
       debug:
         msg: ansible architecture is 
-      when: ansible_architecture == "x86_32"  # we have given wrong input so it will skip
+      when: ansible_architecture == "x86_32"  # we have given wrong input so it will skip # so basicall it takes variabl values from gather info
     - name: ansible architecture
       debug:
         msg: ansible_architecture is x86_32
-      when: ansible_architecture == "x86_32"
+      when: ansible_architecture == "x86_64"
 ...
 
