@@ -1,0 +1,11 @@
+---
+- name: Removing apache2
+  hosts: all
+  become: true
+  tasks:
+    - name: uninstalltion of installed package.
+      package:
+        name: apache2
+        state: absent
+      when: ansible_os_family == "Debian"
+...
