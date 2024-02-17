@@ -1,0 +1,15 @@
+# used to install the package on node server
+#present = currently installed package.
+#latest = It will install latest package.
+#absent = It will remove.
+
+---
+- name: package module
+  hosts: all
+  become: true
+  tasks:
+    - name: Install web-package
+      package: apache2
+      state: latest
+      when: ansible_os_family == "Debian" 
+... 
