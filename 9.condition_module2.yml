@@ -1,6 +1,7 @@
 ---
 - name: condition module
   hosts: all
+  become: true
   tasks: 
     - name: 
         debug:
