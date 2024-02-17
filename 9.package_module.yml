@@ -9,7 +9,8 @@
   become: true
   tasks:
     - name: Install web-package
-      package: apache2
-      state: latest
+      package:
+        name: apache2
+        state: latest
       when: ansible_os_family == "Debian" 
 ... 
