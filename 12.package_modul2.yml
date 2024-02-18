@@ -1,6 +1,6 @@
 # Playbook for update server and install tree package.
 ---
-- name: package module example
+- name: 
   hosts: all
   become: true
   tasks:
