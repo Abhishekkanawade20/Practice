@@ -1,0 +1,25 @@
+# This is tags module playbook.
+---
+- name: Tag playbook
+  hosts: all
+  tasks:
+    - name: Abhishek's mobile no
+      debug:
+        msg: 9130142892
+      tags: abhishek
+
+    - name: vishal's mobile no
+      debug:
+        msg: 9730845784
+      tags: vishal
+
+    - name: Nikhil's mobile no
+      debug:
+        msg: 7410014911
+      tags: nikhil
+
+    - name: Atul's mobile no
+      debug:
+        msg: 9096026935
+      tags: atul
+...
