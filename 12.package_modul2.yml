@@ -4,7 +4,7 @@
   hosts: all
   become: true
   tasks:
-    - name: Installation of tree package on node server
+    - name: 
       package:
         - name: tree 
           state: latest
