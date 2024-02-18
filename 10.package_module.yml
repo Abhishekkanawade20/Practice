@@ -12,5 +12,10 @@
       package:
         name: apache2
         state: latest
-      when: ansible_os_family == "Debian" 
-... 
+      when: ansible_os_family == "Red-hat"   #his condition is false that's why it will not install the apche2
+    - name: Installing web-package
+      package:
+        name: apache2
+        state: latest
+      when: ansible_os_family == "Debian" #condition is true ubuntu belongs to debian family, apache 2 will install at node instance
+...
