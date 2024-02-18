@@ -6,7 +6,7 @@
   tasks:
     - name: 
       package:
-        - name: tree 
+        - name: apache2
           state: latest
           update_cache: yes 
       when: ansible_os_family == "Debian"
