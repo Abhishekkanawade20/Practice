@@ -6,8 +6,8 @@
   tasks:
     - name: Installation of tree package on node server
       package:
-        - name: tree
-          update_cache: yes  
+        - name: tree 
           state: latest
+          update_cache: yes 
       when: ansible_os_family == "Debian"
 ...
