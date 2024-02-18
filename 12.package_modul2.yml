@@ -3,7 +3,7 @@
   hosts: all
   become: true
   tasks:
-    - name: Updating node server and installing tree package at node server.
+    - name: Updating node server and installing tree package at node server ...
       package:
           state: latest
           update_cache: yes 
