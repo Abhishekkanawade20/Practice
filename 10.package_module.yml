@@ -12,10 +12,21 @@
       package:
         name: apache2
         state: latest
-      when: ansible_os_family == "Red-hat"   #his condition is false that's why it will not install the apche2
+      when: ansible_os_family == "Red-hat"   #tis condition is false that's why it will not install the apche2
+ 
     - name: Installing web-package
       package:
         name: apache2
         state: latest
       when: ansible_os_family == "Debian" #condition is true ubuntu belongs to debian family, apache 2 will install at node instance
+
+    - name: start apache2 service         # syntax for start installed service
+      systemd: 
+        name: apche2
+        state: started                    # use state started to start the service
+      when: ansible_os_family == "Debian""
+
+
+
 ...
+

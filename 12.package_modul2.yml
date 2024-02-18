@@ -1,4 +1,5 @@
 ---
+# Playbook for update server and install tree package.
 - name: Installtion and update the node server
   hosts: all
   become: true
@@ -9,4 +10,3 @@
           update_cache: yes 
       when: ansible_os_family == "Debian"
 ...
-# Playbook for update server and install tree package.
