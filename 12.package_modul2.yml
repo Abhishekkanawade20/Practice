@@ -1,5 +1,4 @@
 # Playbook for update server and install tree package.
----
 - name: 
   hosts: all
   become: true
@@ -9,4 +8,4 @@
           state: latest
           update_cache: yes 
       when: ansible_os_family == "Debian"
-...
+      
